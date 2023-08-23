@@ -13,8 +13,8 @@ def greeting():
 @app.route("/calculator/add", methods=['POST'])
 def add():
     data = request.get_json()
-    d = Result(data["first"] + data["second"])
-    return jsonify(d)
+    cd = Result(data["first"] + data["second"])
+    return jsonify(cd)
 
 @app.route("/calculator/subtract", methods=['POST'])
 def subtract():
